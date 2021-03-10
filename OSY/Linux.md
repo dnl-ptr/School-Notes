@@ -4,7 +4,7 @@ Příkazy:
 * **ls** -> Výpis adresářů
     * **-l** -> Podrobnější výpis
     * **-a** -> Zobrazí i skryté soubory
-* **su** -> super user, přihlášení jako *root*
+* **su** -> Substitute User, přepnutí na jiného uživatele, bez zadání loginu -> přihlášení jako *root*
 * **sudo** -> Provede příkaz jako *root*
 
 &nbsp;
@@ -40,13 +40,26 @@ Příkazy:
 * **chmod** -> Příkaz pro změnu práv souboru
     * **-r** -> změní práva na všech souborech rekurzivně
 
-K příkazu *chmod* je potřeba přidat binární hodnota práv a soubor
+K příkazu *chmod* je potřeba přidat číselnou hodnotu práv a soubor
 
 Např.:
 >chmod 750 soubor.txt
 
 U čísla 7/5/0 platí stejné trojice jako u výpisu práv:
->750 -> drwxr-x---
+>Číslo 7 je pro uživatele, 5 pro skupinu a 0 pro ostatní
+
+## Číselné hodnoty práv
+
+| Hodnota     | Právo  |
+| :---------: | :----: |
+| 0           | ---    |
+| 1           | --x    |
+| 2           | -w-    |
+| 3           | -wx    |
+| 4           | r--    |
+| 5           | r-x    |
+| 6           | rw-    |
+| 7           | rwx    |
 
 &nbsp;
 
