@@ -67,6 +67,8 @@ U čísla 7/5/0 platí stejné trojice jako u výpisu práv:
 
 Přidat uživatele můžeme pomocí GUI nebo příkazu
 
+![Uživatelé](images/Users_GUI.png "Uživatelé")
+
 Příkazy:
 * **sudo adduser / useradd** -> Vytvoří nového uživatele
     * **-m** -> Vytvoří novému uživateli domovský adresář
@@ -76,3 +78,25 @@ Např.:
 >sudo adduser uzivatel -m
 
 >passwd uzivatel
+
+&nbsp;
+
+# Instalace aplikací
+
+Instalace aplikací v programu *Software* nebo pomocí příkazů
+
+![Obchod s aplikacemi](images/Software.png "Obchod s aplikacemi")
+
+Příkazy:
+* **apt** -> správce balíků
+    * **list** -> vypíše abecedně všechny balíky v repozitáři
+    * **install** -> nainstaluje vybraný balík
+    * **remove** -> odstraní vybraný balík
+    * **upgrade** -> aktualizace nainstalovaných balíků
+    * **update** -> aktualizuje seznam balíků
+
+Např.:
+>apt list m*
+
+>apt install vlc
+
