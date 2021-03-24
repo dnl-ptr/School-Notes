@@ -13,7 +13,7 @@ Příkazy:
 
 Práva uživatelů a skupin jsou vypsané ve výpisu adresářů -> *ls -l*
 
-![Příkaz ls -l](images/ListFiles.png "Příkaz ls -l")
+![Příkaz ls -l](assets/images/ListFiles.png "Příkaz ls -l")
 
 Např.:
 >drwxr-x--x
@@ -67,7 +67,7 @@ U čísla 7/5/0 platí stejné trojice jako u výpisu práv:
 
 Přidat uživatele můžeme pomocí GUI nebo příkazu
 
-![Uživatelé](images/Users_GUI.png "Uživatelé")
+![Uživatelé](assets/images/Users_GUI.png "Uživatelé")
 
 Příkazy:
 * **sudo adduser / useradd** -> Vytvoří nového uživatele
@@ -85,7 +85,7 @@ Např.:
 
 Instalace aplikací v programu *Software* nebo pomocí příkazů
 
-![Obchod s aplikacemi](images/Software.png "Obchod s aplikacemi")
+![Obchod s aplikacemi](assets/images/Software.png "Obchod s aplikacemi")
 
 Příkazy:
 * **apt** -> správce balíků
