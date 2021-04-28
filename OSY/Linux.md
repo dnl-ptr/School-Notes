@@ -100,3 +100,27 @@ Např.:
 
 >apt install vlc
 
+&nbsp;
+
+# Soubory
+
+Hardlink - odkaz na jiný soubor, změna v originálním souboru se projeví i v odkazujících souborech, odstranění originálního souboru nezmění odkazující soubory
+
+Softlink - odkaz na jiný soubor, odstranění originálního souboru znefunkční Softlink,
+využití jako zástupce
+
+* **ln** -> vytvoří hardlink na soubor
+    * **-s** -> vytvoří softlink na soubor
+* **ls >** -> vytvoří soubor s výpisem *ls*
+* **rm** -> odstraní soubor
+
+Např.:
+>ls > soubor.txt
+
+>ln soubor.txt hardlink.txt
+
+>rm soubor.txt
+
+&nbsp;
+
+#
