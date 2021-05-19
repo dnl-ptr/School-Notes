@@ -6,6 +6,13 @@ Příkazy:
     * **-a** -> Zobrazí i skryté soubory
 * **su** -> Substitute User, přepnutí na jiného uživatele, bez zadání loginu -> přihlášení jako *root*
 * **sudo** -> Provede příkaz jako *root*
+* **top** -> zobrazí běžící procesy
+* **kill** -> ukončí proces
+    * **killall** -> ukončí všechny procesy, podle vybraných filtrů
+
+Např.:
+>kill *process id*
+
 
 &nbsp;
 
@@ -104,15 +111,17 @@ Např.:
 
 # Soubory
 
-Hardlink - odkaz na jiný soubor, změna v originálním souboru se projeví i v odkazujících souborech, odstranění originálního souboru nezmění odkazující soubory
+**Hardlink** - odkaz na jiný soubor, změna v originálním souboru se projeví i v odkazujících souborech, odstranění originálního souboru nezmění odkazující soubory
 
-Softlink - odkaz na jiný soubor, odstranění originálního souboru znefunkční Softlink,
+**Softlink** - odkaz na jiný soubor, odstranění originálního souboru znefunkční Softlink,
 využití jako zástupce
 
 * **ln** -> vytvoří hardlink na soubor
     * **-s** -> vytvoří softlink na soubor
 * **ls >** -> vytvoří soubor s výpisem *ls*
 * **rm** -> odstraní soubor
+* **cat** -> vypíše obsah souboru
+* **vi** -> editace souboru
 
 Např.:
 >ls > soubor.txt
@@ -120,6 +129,43 @@ Např.:
 >ln soubor.txt hardlink.txt
 
 >rm soubor.txt
+
+>cat soubor.txt
+
+&nbsp;
+
+# Diagnostika sítě
+
+* **ip** -> ekvivalent *ipconfig* ve Windows
+    * **address** -> zobrazí IPv4 a IPv6 adresu
+    * **route** -> Routovací tabulka počítače
+* **ping** -> Narozdíl od Windows je nekonečný, ukončí se pomocí Ctrl + C
+* **traceroute** -> zobrazí cestu k adrese
+
+Např.:
+>ip address
+
+>ping seznam.cz
+
+>traceroute 192.168.10.5
+
+Výpis z například *ip address* lze vypsat do souboru:
+
+>ip address > soubor.txt
+
+&nbsp;
+
+# Diagnostika disků
+
+* **df** -> zobrazí všechny diskové jednotky
+    * **-h** -> zobrazí velikosti v MB
+    * **-H** -> zobrazí velikosti v GB
+* **du** -> zobrazí velikosti adresářů a souborů
+    * **-h** -> zobrazí velikosti v MB
+    * **-H** -> zobrazí velikosti v GB
+
+Např.:
+>du -h uzivatel
 
 &nbsp;
 
